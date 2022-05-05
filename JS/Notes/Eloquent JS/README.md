@@ -18,7 +18,7 @@
 
     </details>
   
-  - <a href="https://eloquentjavascript.net/02_program_structure.html#i_rebKE3gdjV">Fizzbuzz</a>
+- <a href="https://eloquentjavascript.net/02_program_structure.html#i_rebKE3gdjV">Fizzbuzz</a>
     <details>
 
     ```
@@ -41,7 +41,7 @@
 
     </details>
   
-  - <a href="https://eloquentjavascript.net/02_program_structure.html#i_swb9JBtSQQ">Chessboard</a>
+- <a href="https://eloquentjavascript.net/02_program_structure.html#i_swb9JBtSQQ">Chessboard</a>
     <details>
 
     ```

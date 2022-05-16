@@ -4,8 +4,9 @@
   --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-red: hsl(0, 6%, 24%);
-  --linear-first: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  --linear-second: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --email: #D8CCCE;
+  --hover-shadow: 0 8px 9px 0 hsl(0deg 36% 82%), 0 6px 22px 0 hsl(0deg 36% 83%);
+  --normal-shadow: 0 13px 22px 0 hsl(0deg 32% 86%), 0 5px 6px 0 hsl(0deg 36% 86%);
 }
 
 * {
@@ -15,6 +16,24 @@
 
 body {
   margin:0px
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--email);
+  opacity: 1; /*Firefox*/
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--email);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--email);
+}
+
+button[type=submit]:hover {
+  background-color: #FAD6D6;
+  box-shadow: var(--hover-shadow);
 }
 
 @media (max-width: 1440px) {
@@ -30,7 +49,40 @@ body {
     position: relative;
     padding-left: 103px;
     bottom: 0;
-    margin-top: 23%;
+    margin-top: 8%;
+  }
+  input[type=email] {
+    text-indent: 20px;
+    margin-top: 17px;
+    background-color: inherit;
+    height: 39px;
+    width: 315px;
+    border: 1px solid var(--email);
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    margin-left: 103px;
+    box-sizing: border-box;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+  }
+  input[type=email]:focus {
+    border: 2px solid var(--desaturated-red);
+  }
+  button[type=submit] {
+    width: 83px;
+    height:42px;
+    background-color: #F5ABAC;
+    margin-left: -69px;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    vertical-align: bottom;
+    box-shadow: var(--normal-shadow);
   }
 }
 
@@ -53,7 +105,7 @@ body {
   font-size: 48px;
   font-weight: 100;
   text-transform: uppercase;
-  text-align: left;
+  text-alignment: left;
   letter-spacing: 12px;
 }
 
@@ -75,9 +127,9 @@ body {
   font-size: 16px;
   color: var(--desaturated-red);
   padding-left: 103px;
-  padding-right: 717px;
+  padding-right: 713px;
   font-weight: 500;
-  text-align: left;
+  line-height: 1.5;
 }
 
 /*Mobile*/
@@ -119,17 +171,17 @@ body {
   }
 
   #first-word{
-    padding-top: 369px;
-    padding-left: 80px;
+    padding-top: 334px;
+    padding-left: 92px;
     padding-bottom: 16px;
   }
   #hello {
     font-size: 11px;
     text-align: center;
     color: var(--desaturated-red);
-    padding-left: 41px;
+    padding-left: 39px;
     font-weight: 500;
-    padding-right: 98px;
+    padding-right: 55px;
   }
   #bottom > p {
     font-size: 10px;
@@ -140,20 +192,58 @@ body {
   #on-mobile {
     padding-left: 4px;
   }
+  input[type=email] {
+    text-indent: 20px;
+    margin-top: 17px;
+    background-color: inherit;
+    height: 34px;
+    width: 276px;
+    border: 1px solid var(--email);
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    margin-left: 33px;
+    box-sizing: border-box;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+  }
+  input[type=email]:focus {
+    border: 2px solid var(--desaturated-red);
+  }
+  button[type=submit] {
+    width: 72px;
+    height: 38px;
+    background-color: #F5ABAC;
+    margin-left: -69px;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    vertical-align: bottom;
+    box-shadow: var(--normal-shadow);
+  }
 }
 
+#bottom__attribution > small {
+  color: var(--desaturated-red);
+}
+
+
 #bottom__fem > a {
-  color: black;
+  color: var(--desaturated-red);
 }
 
 #bottom__me > a {
-  color: black;
+  color: var(--desaturated-red);
 }
 
 #bottom__fem > a:hover {
-  color: var(--desaturated-red);
+  color: black;
 }
 
 #bottom__me > a:hover {
-  color: var(--desaturated-red);
+  color: black;
 }

@@ -26,10 +26,6 @@
   
   <details><summary>Error state</summary>
   
-  <p>Up</p>
-  <img src="https://i.postimg.cc/wMZSphT7/mobile-up.png"></img>
-  
-  <p>Down</p>
   <img src="https://i.postimg.cc/ydVKQXkK/mobile-error.png"></img>
   
   </details>
